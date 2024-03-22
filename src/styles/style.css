@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f7eedd;
+}
+
+img {
+  width: 100%;
+}
+
+.note-app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.note-app h1 {
+  font-weight: normal;
+  font-size: 48px;
+  margin-bottom: 32px;
+  font-family: 'Cormorant Garamond';
+  font-weight: bold;
+}
+
+.note-item {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+  border: 1px solid black;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.note-item__image img {
+  width: 64px;
+  border-radius: 50%;
+}
+
+.note-item__body1 {
+  margin-left: 8px;
+  padding-left: 8px;
+  border-left: 1px solid #aaa;
+  flex: 1;
+}
+
+.note-item__title {
+  padding: 4px 0;
+}
+
+.note-item__body {
+  padding: 4px 0;
+}
+
+.note-item__archived {
+  padding: 4px 0;
+}
+
+.note-item__createdAt {
+  padding: 4px 0;
+}
+
+.note-item__username {
+  font-weight: lighter;
+}
+
+.note-item__delete {
+  padding: 8px;
+  font-size: 18px;
+  background-color: red;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.note-item__archive {
+  padding: 8px;
+  font-size: 18px;
+  background-color: green;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.note-input {
+  border: 1px solid black;
+  padding: 16px;
+  margin: 14px 0;
+  border-radius: 8px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.note-input__title-char-count {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: gray;
+  font-size: 12px;
+}
+
+.note-input input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.note-input button {
+  width: 100%;
+  padding: 8px;
+  font-family: 'Inter', sans-serif;
+  background: #59d5e0;
+}
+
+/* + */
+.search-bar {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  font-family: 'Inter', sans-serif;
+  border-radius: 40px;
+  border: 1px solid gray;
+}
+
+@media (max-width: 640px) {
+  .search-bar {
+    width: 100%;
+  }
+}
